@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: white;
+}
+
+h1{
+    color: rgb(56, 56, 56);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#topButton {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: none;
+    border: none;
+    z-index: 999;
+    i {
+        font-size: 30px;
+        color: green;
+        transition: all 0.2s;
+    }
+    i:hover {
+        color: darkgreen;
+    }
+}
+
+//Header
+.header-container {
+    //background-color: rgb(0, 206, 0);
+    background-color: rgb(67, 144, 56);
+    padding: 10px;
+    .header-row {
+        margin: auto;
+        .header-col {
+            .header-left {
+                .header-left-text {
+                    .left-text {
+                        color: whitesmoke;
+                        margin-top: 5px;
+                        margin-left: 30px;
+                        max-width: 80%;
+                        font-family: 'Roboto Slab', serif;
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .header-right {
+                .header-right-text {
+                    .right-text {
+                        margin-top: 10px;
+                        padding: 3px;
+                        max-width: 80%;
+                        font-family: 'Roboto Slab', serif;
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Navbar
+.menu-container {
+    .menu {
+        background-color: white;
+        padding: 10px;
+        .navbar-toggler {
+            // responsive navbar button
+            background-color: rgb(223, 223, 223);
+            .navbar-toggler-icon {
+                i { 
+                    color: rgb(68, 68, 68);
+                    font-size: 31px;
+                }
+            }
+        } 
+        .navbar-toggler:hover {
+            background-color: rgb(112, 112, 112);
+            box-shadow: 1px 1px 10px #888888;
+        }
+        .menu-collapse {
+            .menu-nav {
+                margin-right: 35px;
+                .menu-item {
+                    margin: 10px;
+                    .menu-drop{
+                        position: absolute;
+                        width: 100px;
+                        margin-top: -5px;
+                        .dropdown-item{
+                            color: gray;
+                            transition: all 0.4s;
+                            font-size: 20px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        }
+                        .dropdown-item:hover{
+                            background-color: white;
+                            color: black;
+                            transition: all 0.4s;
+                        }
+                    }
+                    .menu-drop:hover{
+                        background-color: white;
+                    }
+                    .menu-link {
+                        color: rgb(0, 0, 0);
+                        font-size: 22px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    .menu-link:hover {
+                        color: black;
+                    }
+                    .menu-link::after{ // navbar border bottom çıkması
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background: #000;
+                        transition: 0.3s ease-in-out;
+                    }
+                    .menu-link:hover::after { // navbar border bottom çıkması için width verdik.
+                        width: 20px; // border bottom genişliğini buradan ayarladık.
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Hakkımda
+.hakkimizda {
+    margin-top: 100px;
+  
+    .container .row .col-md-12 .card {
+      box-shadow: 1px 1px 4px 4px #e8e8e8;
+    }
+  }
+
+//Slider
+.slider-container {
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    .carousel-title {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 800;
+                    }
+                    .carousel-text {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev {
+            .carousel-control-prev-icon {
+                background-color: red;
+            }
+        }
+        .carousel-control-next {
+            .carousel-control-next-icon {
+                background-color: red;
+            }
+        }
+    }
+}
+
+//Products
+.products-container {
+    margin-top: 20px;
+    .products-row {
+        .products-col {
+            padding: 20px;
+            margin-top: 20px;
+            .products-title {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                .title{
+                    .title-text{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            .products-body {
+                .products-text {
+                    font-size: 18px;
+                }
+            }
+            .products-footer {
+                .products-button {
+                    border-radius: 3px;
+                    padding: 10px;
+                    border: none;
+                    background-color: rgba(0, 124, 0, 0.9);
+                    transition: all 0.3s;
+                    .products-button-text {
+                        text-decoration: none;
+                        color: whitesmoke;
+                        font-weight: 500;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                }
+                .products-button:hover {
+                    background-color: rgb(0, 112, 0);
+                    box-shadow: 1px 1px 10px #888888;
+                }
+                .products-span-message{
+                    display: none;
+                }
+            }
+            .products-image {
+                img {
+                    max-width: 90%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+//main
+.main-container{
+    .main-row{
+
+        .main-left-col{
+            margin-top: 10px;
+            .main-left-card{
+                box-shadow: 1px 1px 4px 4px #e8e8e8;
+                .main-left-card-body{
+                    .main-left-card-title{
+                        font-weight: 600;
+                        font-size: 25px
+                    }
+                    
+                    .left-card-content{
+                        border: none;
+                        .left-card-content-body{
+                        .left-card-content-row{
+                            margin-top: 10px;
+                            .left-card-content-col{
+                                padding: 10px;
+                                .left-card-content-category{
+                                    color: black;
+                                    font-weight: 700;
+                                }
+                                .left-card-content-img{
+                                    width: 200px;
+                                    height: 150px;
+                                }
+                                .left-card-content-icons{
+                                    color: purple;
+                                }
+                                .left-card-content-title{
+                                    color: black;
+                                }
+                                .left-card-content-text{
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+
+                    }
+                }
+            }
+        }
+
+        .right-col{
+            margin-top: 10px;
+            .right-card{
+                box-shadow: 1px 1px 4px 4px #e8e8e8;
+                .right-card-img{
+
+                }
+                .right-card-body{
+                    .right-card-title{
+                        color: black;
+                    }
+                    .right-text{
+                        .right-links{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        .right-text-icons{
+
+                        }
+                    }
+                }
+            }
+
+
+            .category-row{
+                margin-top: 20px;
+                .category-col{
+                    .category{
+                        box-shadow: 1px 1px 4px 4px #e8e8e8;
+                        .category-title{
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+                        .category-links{
+                            .links{
+                                padding: 20px;
+                                .items{
+                                    color: red;
+                                    text-decoration: none;
+                                    .item-href{
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Ürün Bilgi Kartları
+.info-card-container {
+    //background-color: rgba(81, 255, 0, 0.05);
+    margin-top: 80px;
+    margin-bottom: 50px;
+    .info-card-title{
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .info-card-row {
+        margin: auto;
+        margin-top: 20px;
+        .info-card-col {
+            padding: 5px;
+            .info-card {
+                width: 250px;
+                .info-card-body {
+                    .info-card-category{
+                        font-weight: 700;
+                    }
+                    .info-card-image{
+                        
+                    }
+                    .info-card-text{
+
+                    }
+                    /*.info-card-image {
+                        img {
+                            transition: 200ms;
+                        }
+                        img:hover {
+                            transform: scale(1.1);
+                        }
+                    }*/
+                    .info-card-title {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .info-card-footer {
+                        .info-card-button {
+                            border-radius: 3px;
+                            padding: 10px;
+                            border: none;
+                            background-color: rgba(0, 124, 0, 0.9);
+                            color: whitesmoke;
+                            transition: all 0.3s;
+                        }
+                        .info-card-button:hover {
+                            background-color: rgb(0, 112, 0);
+                            box-shadow: 1px 1px 10px #888888;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer-container{
+    background-color: rgb(255, 255, 255);
+    .footer-row{
+        .footer-col{
+            .footer-title{
+                margin-top: 40px;
+                text-align: center;
+            }
+            .footer-content{
+                .content-text{
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+            .footer-navbar{
+                .footer-nav{
+                    list-style-type: none;
+                    .footer-item{
+                        padding: 10px;
+                        margin-right: 40px;
+                        .footer-link{
+                            text-decoration: none;
+                            color: rgb(51, 51, 51);
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            transition: all 0.4s;
+                        }
+                        .footer-link:hover{
+                            transition: all 0.4s;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .footer-social{
+                margin-top: 20px;
+                .icon-link{
+                    text-decoration: none;
+                    .icon-facebook{
+                        color: #3b5998;
+                        font-size: 35px;
+                        transition: all 0.6s;
+                        padding: 15px;
+                    }
+                    .icon-facebook:hover{
+                        color: #1241a7;
+                        transition: all 0.6s;
+                    }   
+                    .icon-instagram{
+                        color: #C13584;
+                        font-size: 35px;
+                        padding: 15px;
+                        transition: all 0.6s;
+                    }
+                    .icon-instagram:hover{
+                        color: #ae0062;
+                        transition: all 0.6s;
+                    }   
+                    .icon-twitter{
+                        color: #1DA1F2;
+                        font-size: 35px;
+                        padding: 15px;
+                        transition: all 0.6s;
+                    }
+                    .icon-twitter:hover{
+                        color: #007bc7;
+                        transition: all 0.6s;
+                    }   
+                    .icon-gmail{
+                        color: #BB001B;
+                        font-size: 35px;
+                        padding: 15px;
+                        transition: all 0.6s;
+                    }
+                    .icon-gmail:hover{
+                        color: #8f0015;
+                        transition: all 0.6s;
+                    }   
+                }   
+            }
+            .footer-copyright{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+        }
+    }
+} 

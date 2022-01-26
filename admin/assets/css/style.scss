@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+//Panel Sidebar
+.sidebar{
+    .sidebar-nav{
+        height: 600px;
+        .sidebar-nav-item{
+            .sidebar-nav-link{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.container{
+    .row{
+        .card{
+            margin-top: 10px;
+        }
+    }
+}

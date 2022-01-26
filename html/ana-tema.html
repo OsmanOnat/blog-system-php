@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/html">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/html">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <title>Toptan Bamya | Anasayfa</title>
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
+
+    <!--Semantic UI-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Back To Top Button --->
+    <button id="topButton">
+        <i class="fa fa-arrow-circle-up"></i>
+    </button>
+
+    <header>
+        <div class="header-container">
+            <div class="header-row row">
+                <div class="header-col col-md-12">
+                    <div class="header-left">
+                        <div class="header-left-text">
+                            <p class="left-text">
+                                Duyuru : Şuanda Geçerli Bir Duyuru Yok!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="header-col col-md-6">
+                    <div class="header-right">
+                        <div class="header-right-text">
+                            <p class="right-text">
+                                Tüm Ürünlerde Geçerli %25 İndirim KAÇIRMA!
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </header>
+
+
+    <div class="menu-container navbar-container">
+        <nav class="menu navbar navbar-expand-lg">
+            <a class="menu-brand navbar-brand" href="index.html"
+                style="color: white; font-size: 30px; margin-left: 10px;"><img
+                    src="assets/img/logo1-helvetic-sonhali-kırpılmış.png" class="menu-logo-image"
+                    style="width: 200px; margin-left: 50px; "></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <div class="menu-collapse collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="menu-nav navbar-nav ml-auto">
+                    <!-- ml-auto ile sağa kaydırdık -->
+                    <li class="menu-item nav-item">
+                        <a class="menu-link nav-link" id="active" href="#">Anasayfa<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a class="menu-link nav-link" href="#">Hakkımda</a>
+                    </li>
+                    <li class="menu-item nav-item dropdown" class="display: block;">
+                        <a class="menu-link nav-link" href="ürünler.html" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown">Blog</a>
+                        <div class="menu-drop dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item dropdown-link" href="#">Bamya 1</a>
+                            <a class="dropdown-item" href="#">Bamya 2</a>
+                            <a class="dropdown-item" href="#">Bamya 3</a>
+                            <a class="dropdown-item" href="#">Bamya 4</a>
+                        </div>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a class="menu-link nav-link" href="#">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!---- Ürün Hakkında Bilgi -->
+
+    <!--- <div class="products-container container">
+
+        <div class="products-row row">
+            <div class="products-col col-md-6">
+                <div class="products-title">
+                    <h2 class="title">
+                        <a href="#" class="title-text">
+                            Product Name One
+                        </a>
+                    </h2>
+                </div>
+                <div class="products-body">
+                    <p class="products-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id dolor quidem architecto beatae
+                        dicta vitae voluptates minima ea. Facilis, sint asperiores. Hic, explicabo? Asperiores eos
+                        ratione ex voluptates reiciendis!
+                    </p>
+                </div>
+                <div class="products-footer">
+                    <button class="products-button"><a href="" class="products-button-text">For Product İnfo
+                        </a></button>
+                    <span class="products-span-message">Ürünü Görmek İçin Tıklayınız!</span>
+                </div>
+            </div>
+            <div class="products-col col-md-6">
+                <div class="products-image">
+                    <img src="assets/img/yuvarlak-klipsli-oluk-500x313.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="products-row row">
+            <div clasS="products-col col-md-6">
+                <div class="products-image">
+                    <img src="assets/img/yuvarlak-klipsli-oluk-500x313.jpg">
+                </div>
+            </div>
+            <div class="products-col col-md-6">
+                <div class="products-title">
+                    <h2 class="title">
+                        <a href="#" class="title-text">
+                            Product Name One
+                        </a>
+                    </h2>
+                </div>
+                <div class="products-body">
+                    <p class="products-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id dolor quidem architecto beatae
+                        dicta vitae voluptates minima ea. Facilis, sint asperiores. Hic, explicabo? Asperiores eos
+                        ratione ex voluptates reiciendis!
+                    </p>
+                </div>
+                <div class="products-footer">
+                    <button class="products-button"><a href="" class="products-button-text">For Product İnfo
+                        </a></button>
+                    <span class="products-span-message">Ürünü Görmek İçin Tıklayınız!</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="products-row row">
+            <div class="products-col col-md-6">
+                <div class="products-title">
+                    <h2 class="title">
+                        <a href="#" class="title-text">
+                            Product Name One
+                        </a>
+                    </h2>
+                </div>
+                <div class="products-body">
+                    <p class="products-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id dolor quidem architecto beatae
+                        dicta vitae voluptates minima ea. Facilis, sint asperiores. Hic, explicabo? Asperiores eos
+                        ratione ex voluptates reiciendis!
+                    </p>
+                </div>
+                <div class="products-footer">
+                    <button class="products-button"><a href="" class="products-button-text">For Product
+                            İnfo</a></button>
+                    <span class="products-span-message">Ürünü Görmek İçin Tıklayınız!</span>
+                </div>
+            </div>
+            <div clasS="products-col col-md-6">
+                <div class="products-image">
+                    <img src="assets/img/yuvarlak-klipsli-oluk-500x313.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+    <div class="main-container container">
+        <div class="main-row row">
+
+            <div class="main-left-col col-md-8">
+                <div class="main-left-card card text-left bg-light">
+                    <div class="main-left-card-body card-body">
+                        <p class="main-left-card-title card-title">Gündem</p>
+                        <div class="left-card-content card text-white bg-light">
+                            <div class="left-card-content-body card-body">
+                                
+                                <div class="left-card-content-row row">
+                                    <div class="left-card-content-col col-md-4">
+                                        <img class="left-card-content-img" src="assets/img/dc-logo-1.png" alt="">
+                                    </div>
+                                    <div class="left-card-content-col col-md-8">
+                                        <h4 class="left-card-content-title">Title</h4>
+                                        <p class="left-card-content-text">dsadsadasdsads</p>
+                                        <div class="">
+                                            <button class="btn btn-success">
+                                                Detaya Git
+                                            </button>
+                                            
+                                            <div class="ui label">
+                                                <i class="comment icon"></i> 
+                                                23
+                                            </div>
+                                            <div class="ui label">
+                                                <i class="like icon"></i> 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="left-card-content-row row">
+                                    <div class="left-card-content-col col-md-4">
+                                        <img class="left-card-content-img" src="assets/img/dc-logo-1.png" alt="">
+                                    </div>
+                                    <div class="left-card-content-col col-md-8">
+                                        <h4 class="left-card-content-title">Title</h4>
+                                        <p class="left-card-content-text">dsadsadasdsads</p>
+                                        <div class="">
+                                            <button class="btn btn-success">
+                                                Detaya Git
+                                            </button>
+                                            <div class="ui label">
+                                                <i class="comment icon"></i> 
+                                                23
+                                            </div>
+                                            <div class="ui label">
+                                                <i class="like icon"></i> 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="left-card-content-row row">
+                                    <div class="left-card-content-col col-md-4">
+                                        <img class="left-card-content-img" src="assets/img/dc-logo-1.png" alt="">
+                                    </div>
+                                    <div class="left-card-content-col col-md-8">
+                                        <h4 class="left-card-content-title">Title</h4>
+                                        <p class="left-card-content-text">dsadsadasdsads</p>
+                                        <div class="">
+                                            <button class="btn btn-success">
+                                                Detaya Git
+                                            </button>
+                                            <div class="ui label">
+                                                <i class="comment icon"></i> 
+                                                23
+                                            </div>
+                                            <div class="ui label">
+                                                <i class="like icon"></i> 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col col-md-4">
+                <div class="right-card card text-white bg-light">
+                    <img class="right-card-img card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="right-card-body card-body">
+                        <h4 class="right-card-title card-title">Popüler Yazılar</h4>
+
+                        <p class="right-text card-text">
+                            <a class="right-links" href="#" >
+                                Motivasyon Nedir ?
+                            </a>
+                            <span class="ui label">
+                                <i class="like icon ml-2"></i>
+                                8
+                            </span>
+                            <span class="ui label">
+                                <i class="comment icon ml-2"></i>
+                                8
+                            </span>
+                        </p>
+
+                        <p class="right-text card-text">
+                            <a class="right-links" href="#" >
+                                Seo Nedir ?
+                            </a>
+                            <span class="ui label">
+                                <i class="like icon ml-2"></i>
+                                8
+                            </span>
+                            <span class="ui label">
+                                <i class="comment icon ml-2"></i>
+                                8
+                            </span>
+                        </p>
+
+                        <p class="right-text card-text">
+                            <a class="right-links" href="#" >
+                                Seo Nedir ?
+                            </a>
+                            <span class="ui label">
+                                <i class="like icon ml-2"></i>
+                                8
+                            </span>
+                            <span class="ui label">
+                                <i class="comment icon ml-2"></i>
+                                8
+                            </span>
+                        </p>
+
+                        <p class="right-text card-text">
+                            <a class="right-links" href="#" >
+                                Seo Nedir ?
+                            </a>
+                            <span class="ui label">
+                                <i class="like icon ml-2"></i>
+                                8
+                            </span>
+                            <span class="ui label">
+                                <i class="comment icon ml-2"></i>
+                                8
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="category-row row">
+                    <div class="category-col col-md-12">
+                        <div class="category card">
+                            <h4 class="category-title">
+                                Kategoriler
+                            </h4>
+                            <div class="category-links">
+                                <ul class="links">
+                                    <li class="items">
+                                        <a href="#">Category 1</a>
+                                    </li>
+                                    <hr>
+                                    <li class="items">
+                                        <a href="#">Category 2</a>
+                                    </li>
+                                    <hr>
+                                    <li class="items">
+                                        <a href="#">Category 3</a>
+                                    </li>
+                                    <hr>
+                                    <li class="items">
+                                        <a href="#">Category 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---- Detaya Gitleri Kartları Start -->
+    <div class="info-card-container container-fluid">
+        <div class="info-card-title text-center">
+            <p class="title-text">------------------ SON YAZILAR -------------------</p>
+        </div>
+        <div class="info-card-row row container">
+            <div class="info-card-col col-md-3">
+                <div class="info-card card">
+                    <div class="info-card-body card-body">
+                        <div class="info-card-image card-img">
+                            <img src="assets/img/2021-04-28_23.54.29.png" class="img-fluid">
+                        </div>
+                        <div class="info-card-title card-title">
+                            <h3>Title</h3>
+                        </div>
+                        <span>
+                            Kategori : kategori_isim
+                        </span>
+                        <br><br>
+                        <div class="info-card-text card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit ducimus modi dolorum
+                                ipsum alias, adipisci, corporis maxime consectetur nam, accusamus vel. Esse corporis
+                                voluptates nemo dolore harum dolorum id.</p>
+                        </div>
+                        <div class="info-card-footer">
+                            <button class="info-card-button">Detaya Git</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card-col col-md-3">
+                <div class="info-card card">
+                    <div class="info-card-body card-body">
+                        <div class="info-card-image card-img">
+                            <img src="assets/img/2021-04-28_23.54.29.png" class="img-fluid">
+                        </div>
+                        <div class="info-card-title card-title">
+                            <h3>Title</h3>
+                        </div>
+                        <span>
+                            Kategori : kategori_isim
+                        </span>
+                        <br><br>
+                        <div class="info-card-text card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit ducimus modi dolorum
+                                ipsum alias, adipisci, corporis maxime consectetur nam, accusamus vel. Esse corporis
+                                voluptates nemo dolore harum dolorum id.</p>
+                        </div>
+                        <div class="info-card-footer">
+                            <button class="info-card-button">Detaya Git</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card-col col-md-3">
+                <div class="info-card card">
+                    <div class="info-card-body card-body">
+                        <div class="info-card-image card-img">
+                            <img src="assets/img/2021-04-28_23.54.29.png" class="img-fluid">
+                        </div>
+                        <div class="info-card-title card-title">
+                            <h3>Title</h3>
+                        </div>
+                        <span>
+                            Kategori : kategori_isim
+                        </span>
+                        <br><br>
+                        <div class="info-card-text card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit ducimus modi dolorum
+                                ipsum alias, adipisci, corporis maxime consectetur nam, accusamus vel. Esse corporis
+                                voluptates nemo dolore harum dolorum id.</p>
+                        </div>
+                        <div class="info-card-footer">
+                            <button class="info-card-button">Detaya Git</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card-col col-md-3">
+                <div class="info-card card">
+                    <div class="info-card-body card-body">
+                        <div class="info-card-image card-img">
+                            <img src="assets/img/2021-04-28_23.54.29.png" class="img-fluid">
+                        </div>
+                        <div class="info-card-title card-title">
+                            <h3>Title</h3>
+                        </div>
+                        <span>
+                            Kategori : kategori_isim
+                        </span>
+                        <br><br>
+                        <div class="info-card-text card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit ducimus modi dolorum
+                                ipsum alias, adipisci, corporis maxime consectetur nam, accusamus vel. Esse corporis
+                                voluptates nemo dolore harum dolorum id.</p>
+                        </div>
+                        <div class="info-card-footer">
+                            <button class="info-card-button">Detaya Git</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    <!---- Detaya Gitleri Kartları End -->
+
+
+
+    <!--- Footer Start -->
+    <footer>
+        <div class="footer-container container-fluid" align="center">
+
+            <!-- <div class="footer-row row container">
+                <div class="footer-col col-md-4">
+                    <h4 class="footer-title">
+                        Hakkımızda
+                    </h4>
+                    <hr>
+                    <div class="footer-info">
+                        <p class="info-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium explicabo, porro quo
+                            fuga consequatur recusandae, animi aspernatur facilis aliquam ratione pariatur minus
+                            repudiandae tenetur doloremque quam excepturi rem! Fuga, doloremque!
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h4 class="footer-title">
+                        Ürünler
+                    </h4>
+                    <hr>
+                    <div class="footer-navbar" align="center">
+                        <ul class="footer-nav">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    Link 1
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    Link 2
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    Link 3
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">
+                                    Link 4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-row row">
+                <div class="footer-col col-md-12">
+                    <hr>
+                    <div class="footer-social" align="center">
+                        <a href="#" class="icon-link">
+                            <i class="fa fa-facebook icon-facebook"></i>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <i class="fa fa-instagram icon-instagram"></i>
+                        </a>
+                        <a href="" class="icon-link">
+                            <i class="fa fa-twitter icon-twitter"></i>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <i class="fa fa-google-plus icon-gmail"></i>
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+            </div> -->
+
+            <div class="footer-row row">
+                <div class="footer-col col-md-12">
+                    <div class="footer-copyright">
+                        <p>
+                            <strong>
+                                &copy; Tüm Hakları Saklıdır.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--- Footer End --->
+
+    <!----<script src="scripts/productsMessage.js"></script>--->
+    <script src="assets/scripts/dropdownNavbar.js"></script>
+    <script src="assets/scripts/backToTop.js"></script>
+
+</body>
+
+</html>
