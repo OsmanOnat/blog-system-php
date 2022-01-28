@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `admin_name`, `admin_surname`, `admin_kullanici_adi`, `admin_mail`, `admin_password`, `admin_status`) VALUES
-(1, 'osman', 'onat', 'osmanonat', 'osmanonat@gmail.com', 'osman131518', '1');
+(1, 'osman', 'onat', 'osmanonat', 'osmanonat@gmail.com', '1234', '1');
 
 -- --------------------------------------------------------
 
